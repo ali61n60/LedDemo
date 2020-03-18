@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LedDemo</string>
+    <string name="toggleLed">تغییر وضعیت چراغ قوه</string>
+</resources>

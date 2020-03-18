@@ -34,12 +34,6 @@ public class FlashlightProvider {
             } catch (CameraAccessException e) {
                 Log.e(TAG, e.toString());
             }
-        } else {
-            mCamera = Camera.open();
-            parameters = mCamera.getParameters();
-            parameters.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
-            mCamera.setParameters(parameters);
-            mCamera.startPreview();
         }
     }
     public void turnFlashlightOff() {
@@ -54,12 +48,6 @@ public class FlashlightProvider {
             } catch (CameraAccessException e) {
                 e.printStackTrace();
             }
-        } else {
-            mCamera = Camera.open();
-            parameters = mCamera.getParameters();
-            parameters.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
-            mCamera.setParameters(parameters);
-            mCamera.stopPreview();
         }
     }
 }

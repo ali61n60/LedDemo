@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LedDemo</string>
+    <string name="toggleLed">Toggle Led By Click</string>
 </resources>
