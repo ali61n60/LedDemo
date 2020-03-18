@@ -3,6 +3,7 @@ package com.example.leddemo;
 import android.content.Context;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
+import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.util.Log;
@@ -16,8 +17,10 @@ public class FlashlightProvider {
     private Context context;
 
     public FlashlightProvider(Context context) {
+
         this.context = context;
     }
+
 
     public void turnFlashlightOn() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -26,7 +29,7 @@ public class FlashlightProvider {
                 String cameraId = null;
                 if (camManager != null) {
                     cameraId = camManager.getCameraIdList()[0];
-                    camManager.setTorchMode(cameraId, true);
+                    camManager.setTorchMode(cameraId, true); 
                 }
             } catch (CameraAccessException e) {
                 Log.e(TAG, e.toString());
