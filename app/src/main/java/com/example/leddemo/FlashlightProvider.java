@@ -11,8 +11,6 @@ import android.util.Log;
 public class FlashlightProvider {
 
     private static final String TAG = FlashlightProvider.class.getSimpleName();
-    private Camera mCamera;
-    private Camera.Parameters parameters;
     private CameraManager camManager;
     private Context context;
 
@@ -29,13 +27,15 @@ public class FlashlightProvider {
                 String cameraId = null;
                 if (camManager != null) {
                     cameraId = camManager.getCameraIdList()[0];
-                    camManager.setTorchMode(cameraId, true); 
+                    camManager.setTorchMode(cameraId, true);
+
                 }
             } catch (CameraAccessException e) {
                 Log.e(TAG, e.toString());
             }
         }
     }
+
     public void turnFlashlightOff() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             try {

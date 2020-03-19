@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLed"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="50dp"
@@ -17,6 +17,22 @@
         android:ellipsize="none"
         android:text="@string/toggleLed"
         android:background="@drawable/button_background"/>
+    <Button
+        android:id="@+id/buttonGps"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="50dp"
+        android:layout_weight="25"
+        android:ellipsize="none"
+        android:text="@string/showGpsData"
+        android:background="@drawable/button_background"/>
+
+    <TextView
+        android:id="@+id/textViewLat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:text="TextView" />
 
 
 </LinearLayout>
