@@ -1,4 +1,4 @@
-package com.example.leddemo;
+package com.example.leddemo.model;
 
 import android.content.Context;
 import android.location.LocationManager;

@@ -1,9 +1,7 @@
-package com.example.leddemo;
+package com.example.leddemo.model;
 
 import android.content.Context;
-import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
-import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.os.Build;
 import android.util.Log;
